@@ -1,5 +1,26 @@
 {
-  "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "target": "es5",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "module": "CommonJS",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "globals.d.ts"
+  ]
 }

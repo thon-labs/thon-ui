@@ -1,5 +1,0 @@
-{
-  "sourceDir": ".thon",
-  "extensions": ["thon"],
-  "useTypescript": true
-}
