@@ -138,9 +138,7 @@ const textMapper: TextMapper = {
 type Props = {
   variant?: string;
   as?: React.ElementType;
-  color?: string;
   fallback?: boolean | string;
-  copyToastProps?: { background?: string };
 };
 
 export const Text = React.forwardRef<
@@ -149,7 +147,7 @@ export const Text = React.forwardRef<
 >(
   (
     { variant = 'base', as = 'span', fallback = '-', children, ...props },
-    ref,
+    ref
   ) => {
     const variants = variant.split(' ');
     const textClasses = [];
@@ -166,7 +164,7 @@ export const Text = React.forwardRef<
 
       if (!textMap) {
         throw new Error(
-          `Text Component Combination Error: There is no configuration for variant "${variant}".`,
+          `Text Component Combination Error: There is no configuration for variant "${variant}".`
         );
       }
 
@@ -176,33 +174,33 @@ export const Text = React.forwardRef<
             (key) =>
               `${breakpoint && `${breakpoint}:`}${
                 textMap[key as keyof typeof textMap]
-              }`,
+              }`
           )
-          .join(' '),
+          .join(' ')
       );
     }
 
     const regexForColor = React.useMemo(
       () => new RegExp(/text-[a-z]+-\d+/),
-      [props.className],
+      [props.className]
     );
 
     const className = classNames(
       {
         'text-gray-900 dark:text-gray-50': !regexForColor.test(
-          props.className || '',
+          props.className || ''
         ),
       },
       textClasses,
-      props.className,
+      props.className
     );
 
     return React.createElement(
       as,
       { ref, ...props, className },
-      fallback ? (children != null ? children : fallback) : children,
+      fallback ? (children != null ? children : fallback) : children
     );
-  },
+  }
 );
 
 Text.displayName = 'Text';
