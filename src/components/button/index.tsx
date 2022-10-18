@@ -62,7 +62,11 @@ export const Button = React.forwardRef<
         className,
       },
       <>
-        <Spinner className="!absolute" hidden={!loading} />
+        <Spinner
+          className="!absolute"
+          hidden={!loading}
+          oppositeColor={!(variant === 'secondary')}
+        />
         <Text variant="sm" className={textClassName}>
           {children}
         </Text>

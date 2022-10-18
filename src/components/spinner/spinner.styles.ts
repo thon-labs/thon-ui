@@ -60,4 +60,10 @@ export default {
     after:h-12
     after:border-6
   `,
+  spinnerRingOppositeColor: `
+    before:border-gray-900/[.20]
+    dark:before:border-white/[.20]
+    after:border-t-gray-900
+    dark:after:border-t-gray-50 
+  `,
 };
