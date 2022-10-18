@@ -37,9 +37,12 @@ export default {
   inputTextError: `
     bg-pink-50 
     border-pink-500
-    dark:bg-pink-500/[0.12]
     hover:border-pink-500
     focus:border-pink-500
+    dark:bg-pink-500/[0.12]
+    dark:border-pink-500
+    dark:hover:border-pink-500
+    dark:focus:border-pink-500
   `,
   inputTextMessage: `
     mt-1
