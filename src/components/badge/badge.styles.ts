@@ -7,6 +7,13 @@ export default {
     rounded-2xl 
     px-1.5
   `,
+  badgePrimary: `
+    bg-primary
+  `,
+  badgeSecondary: `
+    bg-gray-800 
+    dark:bg-gray-200 
+  `,
   badgeRed: `
     bg-gradient-to-r 
     from-red-500 
@@ -21,7 +28,11 @@ export default {
   `,
   badgeText: `
     uppercase
-    font-extrabold 
+    !font-extrabold 
     !text-gray-50
+  `,
+  badgeSecondaryText: `
+    !text-gray-50
+    dark:!text-gray-900
   `,
 };
