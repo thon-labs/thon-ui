@@ -18,9 +18,9 @@ module.exports = plugin(
   {
     darkMode: 'class',
     theme: {
-      colors,
-      fontFamily,
       extend: {
+        colors,
+        fontFamily,
         keyframes: {
           'spinner-ring': {
             '0%': { transform: 'rotate(0deg)' },

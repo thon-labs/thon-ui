@@ -2,21 +2,46 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Button } from '../components/button';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
 } as ComponentMeta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+const commonProps = {
+  size: 'medium',
+  as: 'button',
+  loading: false,
+  locked: false,
+  disabled: false,
+};
+
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   variant: 'primary',
-  label: 'Button',
-  children: 'My Button',
+  children: 'My Primary Button',
+  ...commonProps,
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: 'secondary',
+  children: 'My Secondary Button',
+  ...commonProps,
+};
+
+export const Ghost = Template.bind({});
+Ghost.args = {
+  variant: 'ghost',
+  children: 'My Ghost Button',
+  ...commonProps,
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  variant: 'danger',
+  children: 'My Delete Button',
+  ...commonProps,
 };

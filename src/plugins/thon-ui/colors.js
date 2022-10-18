@@ -14,6 +14,8 @@
  */
 
 const colorPalette = {
+  primary: '#3b82f6',
+  secondary: '#93c5fd',
   transparent: 'transparent',
   black: '#000',
   white: '#fff',
