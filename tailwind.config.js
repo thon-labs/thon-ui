@@ -1,8 +1,8 @@
-const thonUI = require('./src/thon-ui');
+const { thonUI } = require('./src/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.tsx', './src/**/*.scss'],
+  content: ['./src/**/*.{ts,tsx}'],
   jit: true,
   plugins: [thonUI()],
 };

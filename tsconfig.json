@@ -21,6 +21,7 @@
     "node_modules",
     "**/*.spec.tsx",
     "**/*.spec.ts",
-    "globals.d.ts"
+    "globals.d.ts",
+    "src/stories"
   ]
 }
