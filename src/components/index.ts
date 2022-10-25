@@ -4,3 +4,4 @@ export * from './input-message';
 export * from './button';
 export * from './spinner';
 export * from './badge';
+export * from './avatar';

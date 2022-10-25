@@ -37,7 +37,7 @@ const safelistClasses = [
   'uppercase',
 ];
 
-const safelist = [];
+const safelist = ['w-10', 'w-16', 'w-20', 'h-10', 'h-16', 'h-20'];
 
 breakpoints.forEach((breakpoint) => {
   safelistClasses.forEach((safelistClass) => {
