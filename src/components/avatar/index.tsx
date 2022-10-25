@@ -102,3 +102,5 @@ export const Avatar: React.FC<
     </div>
   );
 };
+
+Avatar.displayName = 'Avatar';
