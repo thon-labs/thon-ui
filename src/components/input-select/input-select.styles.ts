@@ -1,8 +1,8 @@
 export default {
-  inputTextWrapper: `
+  inputSelectWrapper: `
     w-full
   `,
-  inputText: `
+  inputSelect: `
     w-full 
     h-12 
     px-4 
@@ -20,8 +20,6 @@ export default {
     text-sm 
     text-gray-900
     dark:text-gray-50
-    placeholder:text-gray-900/[0.4] 
-    dark:placeholder:text-gray-50/[0.4]
     transition-all 
     duration-200 
     ease-in-out
@@ -33,8 +31,15 @@ export default {
     focus:text-gray-900 
     dark:focus:border-white/[0.8] 
     dark:focus:text-gray-50
+    appearance-none
+    bg-arrow-down
+    bg-no-repeat
   `,
-  inputTextError: `
+  inputSelectPlaceholder: `
+  !text-gray-900/[0.4] 
+    dark:!text-gray-50/[0.4]
+  `,
+  inputSelectError: `
     bg-pink-50 
     border-pink-500
     hover:border-pink-500
@@ -44,7 +49,7 @@ export default {
     dark:hover:border-pink-500
     dark:focus:border-pink-500
   `,
-  inputTextMessage: `
+  inputSelectMessage: `
     mt-1
     ml-1
   `,

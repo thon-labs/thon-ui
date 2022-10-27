@@ -57,6 +57,17 @@ module.exports = plugin(
           tablet: { min: '640px', max: '1023px' },
           desktop: { min: '1024px' },
         },
+        backgroundImage: {
+          'arrow-down':
+            'linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%)',
+        },
+        backgroundPosition: {
+          'arrow-down':
+            'calc(100% - 20px) calc(1px + 50%),calc(100% - 16px) calc(1px + 50%)',
+        },
+        backgroundSize: {
+          'arrow-down': '4px 4px,4px 4px',
+        },
       },
     },
     safelist,
