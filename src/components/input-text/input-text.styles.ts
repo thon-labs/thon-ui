@@ -48,4 +48,7 @@ export default {
     mt-1
     ml-1
   `,
+  inputLabel: `
+    mb-1
+  `,
 };

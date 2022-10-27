@@ -36,3 +36,10 @@ ErrorWithMessage.args = {
   placeholder: 'e.g.: example@thonlabs.io',
   error: 'This field should be an email',
 };
+
+export const WithLabel = Template.bind({});
+WithLabel.args = {
+  id: 'email',
+  label: 'Your Best Email',
+  placeholder: 'e.g.: example@thonlabs.io',
+};
