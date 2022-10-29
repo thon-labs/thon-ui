@@ -48,7 +48,7 @@ export default {
     active:bg-primary/[.8]
     shadow-xl
   `,
-  buttonPrimaryText: `
+  buttonTextWhite: `
     text-gray-50
   `,
   buttonSecondary: `
@@ -78,9 +78,6 @@ export default {
   active:border-red-300
   active:bg-red-300
     shadow-xl
-  `,
-  buttonDangerText: `
-    text-gray-50 
   `,
   buttonDisabled: `
     pointer-events-none

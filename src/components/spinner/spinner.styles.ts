@@ -66,4 +66,10 @@ export default {
     after:border-t-gray-900
     dark:after:border-t-gray-50 
   `,
+  spinnerRingAlwaysLight: `
+    before:!border-white/[.20]
+    dark:before:!border-white/[.20]
+    after:!border-t-white
+    dark:after:!border-t-white
+  `,
 };

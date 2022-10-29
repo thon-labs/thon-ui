@@ -42,3 +42,12 @@ Danger.args = {
   variant: 'danger',
   ...commonProps,
 };
+
+export const Custom = Template.bind({});
+Custom.args = {
+  variant: 'custom',
+  className:
+    'bg-purple-500 hover:bg-purple-500/[.9] active:bg-purple-500/[.8] shadow-xl dark:shadow-sm',
+  textClassName: 'text-gray-50',
+  ...commonProps,
+};

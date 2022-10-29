@@ -11,6 +11,7 @@ type Props = {
   size?: Sizes;
   hidden?: boolean;
   oppositeColor?: boolean;
+  keepLightMode?: boolean;
 };
 
 export const Spinner = React.forwardRef<
@@ -23,6 +24,7 @@ export const Spinner = React.forwardRef<
       size = 'small',
       hidden,
       oppositeColor = true,
+      keepLightMode = false,
       ...props
     },
     ref
@@ -34,6 +36,7 @@ export const Spinner = React.forwardRef<
       [styles.spinnerRingLarge]: size === 'large',
       [styles.spinnerRingHidden]: hidden,
       [styles.spinnerRingOppositeColor]: oppositeColor,
+      [styles.spinnerRingAlwaysLight]: keepLightMode,
     };
 
     const className = classNames(spinnerRingClassName, props.className);
