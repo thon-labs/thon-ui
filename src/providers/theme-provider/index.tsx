@@ -62,7 +62,7 @@ export const ThemeProvider: React.FC<
   function setThemeFromSystem() {
     if (window.matchMedia) {
       const systemIsDarkMode = window.matchMedia(
-        '(prefers-color-scheme: dark)',
+        '(prefers-color-scheme: dark)'
       ).matches;
 
       const systemTheme: Themes = systemIsDarkMode ? 'dark' : 'light';
@@ -96,7 +96,7 @@ export const ThemeProvider: React.FC<
     function storageListener({ newValue, key }: StorageEvent) {
       if (key === STORAGE_THEME_KEY) {
         setThemeConfiguration(
-          newValue ? JSON.parse(newValue) : defaultThemeConfiguration,
+          newValue ? JSON.parse(newValue) : defaultThemeConfiguration
         );
       }
     }
