@@ -7,3 +7,6 @@ export * from './badge';
 export * from './avatar';
 export * from './card';
 export * from './render-markdown';
+export * from './input-select';
+export * from './input-text-area';
+export * from './input-label';
