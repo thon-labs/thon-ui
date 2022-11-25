@@ -27,6 +27,25 @@ module.exports = {
 };
 ```
 
+Then you may create the `postcss.config.js` file with the following content:
+
+```javascript
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+```
+
+_Note: The tailwind, postcss and autoprefixer libraries is already installed by thon-ui_
+
+## How to Use
+
+You can import components, hooks or providers following those patterns below
+
+### Core
+
 On the main file off your application add the base styles from Thon.
 
 ```javascript
@@ -35,10 +54,6 @@ import 'thon-ui/core/fonts.css'; // Exclude in case of using other fronts
 ```
 
 _Note: the default font from Thon UI is ["Inter"](https://fonts.google.com/specimen/Inter) from Google Fonts._
-
-## How to Use
-
-You can import components, hooks or providers following those patterns below
 
 ### Components
 
