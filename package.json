@@ -12,7 +12,7 @@
     "compile": "tsc -p .",
     "build": "rm -rf dist && yarn compile && cp -R src/core dist && cp -R src/plugins dist && cp src/plugin.js dist",
     "postbuild": "gulp postBuild && cp package.json dist",
-    "package": "rm *.tgz && cd dist && yarn pack && cd ../ && mv dist/*.tgz ./",
+    "package": "rimraf *.tgz && cd dist && yarn pack && cd ../ && mv dist/*.tgz ./",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
     "clean": "rm -rf dist",
     "format:check": "prettier --check \"**/*.{ts,tsx,md}\"",
