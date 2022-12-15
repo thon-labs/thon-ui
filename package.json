@@ -1,7 +1,7 @@
 {
   "name": "thon-ui",
   "description": "Create fast and beautiful user interfaces easily using React",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "./index.js",
   "types": "./index.d.ts",
   "files": [
@@ -11,7 +11,7 @@
   "scripts": {
     "compile": "tsc -p .",
     "build": "rm -rf dist && yarn compile && cp -R src/core dist && cp -R src/plugins dist && cp src/plugin.js dist",
-    "postbuild": "gulp postBuild && cp package.json dist",
+    "postbuild": "gulp postBuild && cp package.json dist && cp README.md dist",
     "package": "rimraf *.tgz && cd dist && yarn pack && cd ../ && mv dist/*.tgz ./",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
     "clean": "rm -rf dist",

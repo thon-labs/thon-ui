@@ -16,7 +16,6 @@ module.exports = plugin(
     });
   },
   {
-    darkMode: 'class',
     theme: {
       extend: {
         colors,
