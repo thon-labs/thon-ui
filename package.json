@@ -1,7 +1,7 @@
 {
   "name": "@thonlabs/ui",
   "description": "Create fast and beautiful user interfaces easily using React",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "./index.js",
   "types": "./index.d.ts",
   "files": [
