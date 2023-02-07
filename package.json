@@ -1,5 +1,5 @@
 {
-  "name": "thon-ui",
+  "name": "@thonlabs/ui",
   "description": "Create fast and beautiful user interfaces easily using React",
   "version": "0.0.13",
   "main": "./index.js",

@@ -9,15 +9,15 @@ This is a working in progress project.
 First you can install using npm or yarn into your project.
 
 ```
-npm i thon-ui
+npm i @thonlabs/ui
 # or
-yarn add thon-ui
+yarn add @thonlabs/ui
 ```
 
 On your project create a tailwind config file on root with this configuration below:
 
 ```javascript
-const { thonUI, thonUIContent } = require('thon-ui/plugin');
+const { thonUI, thonUIContent } = require('@thonlabs/ui/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -38,7 +38,7 @@ module.exports = {
 };
 ```
 
-_Note: The tailwind, postcss and autoprefixer libraries is already installed by thon-ui_
+_Note: The tailwind, postcss and autoprefixer libraries is already installed by @thonlabs/ui_
 
 ## How to Use
 
@@ -49,8 +49,8 @@ You can import components, hooks or providers following those patterns below
 On the main file off your application add the base styles from Thon.
 
 ```javascript
-import 'thon-ui/core/base.css';
-import 'thon-ui/core/fonts.css'; // Exclude in case of using other fronts
+import '@thonlabs/ui/core/base.css';
+import '@thonlabs/ui/core/fonts.css'; // Exclude in case of using other fronts
 ```
 
 _Note: the default font from Thon UI is ["Inter"](https://fonts.google.com/specimen/Inter) from Google Fonts._
@@ -58,7 +58,7 @@ _Note: the default font from Thon UI is ["Inter"](https://fonts.google.com/speci
 ### Components
 
 ```javascript
-import { Text, Card } from 'thon-ui';
+import { Text, Card } from '@thonlabs/ui';
 ```
 
 **Current Available Components**
@@ -79,7 +79,7 @@ import { Text, Card } from 'thon-ui';
 ### Providers
 
 ```javascript
-import { ThemeProvider } from 'thon-ui/providers';
+import { ThemeProvider } from '@thonlabs/ui/providers';
 ```
 
 **Current Available Providers**
@@ -90,7 +90,7 @@ import { ThemeProvider } from 'thon-ui/providers';
 ### Hooks
 
 ```javascript
-import { useTheme } from 'thon-ui/hooks';
+import { useTheme } from '@thonlabs/ui/hooks';
 ```
 
 **Current Available Hooks**
