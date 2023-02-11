@@ -33,11 +33,12 @@ export const ThemeContext = React.createContext<IThemeContext>({
 
 type Props = {
   storageKey?: string;
+  enableShortcut?: boolean;
 };
 
 export const ThemeProvider: React.FC<
   Props & React.HTMLAttributes<HTMLElement>
-> = ({ storageKey = STORAGE_THEME_KEY, children }) => {
+> = ({ storageKey = STORAGE_THEME_KEY, enableShortcut = true, children }) => {
   const [themeConfiguration, setThemeConfiguration] =
     useLocalStorage<ThemeConfiguration>(storageKey, defaultThemeConfiguration);
 
@@ -78,6 +79,7 @@ export const ThemeProvider: React.FC<
       keys: ['l'],
       addCtrlModifier: true,
       callback: () =>
+        enableShortcut &&
         setTheme(themeConfiguration.theme === 'dark' ? 'light' : 'dark'),
     },
   ]);
